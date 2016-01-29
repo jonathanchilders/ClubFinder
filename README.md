@@ -1,4 +1,1 @@
-lab4
-====
-
-Lab 4: Programming with Javascript
+Club Finder project for CSE 170 at UCSD
