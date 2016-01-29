@@ -1,11 +1,11 @@
 {
-  "name": "IntroHCI",
+  "name": "ClubFinder",
   "version": "0.0.1",
-  "author": "Intro HCI Staff",
+  "author": "Jonathan Childers, Jonathan McAlexander, Youngchu John Shin",
 
   "repository": {
     "type": "git",
-    "url": "https://github.com/IntroHCI/lab4"
+    "url": "https://github.com/jonathanchilders/ClubFinder.git"
   },
   "license": "MIT",
 
