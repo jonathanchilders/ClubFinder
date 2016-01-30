@@ -4,11 +4,11 @@
  */
 
 exports.view = function(req, res){
-  res.render('index');
+  res.render('homepage');
 };
 
 exports.view = function(req, res){
-  res.render('index', {
+  res.render('homepage', {
     'homepage_options': [
       { 'name': 'Create a Club Profile',
         'id': 'create_profile_button'
