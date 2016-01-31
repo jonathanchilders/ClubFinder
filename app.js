@@ -9,6 +9,7 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var homepage = require('./routes/homepage');
+var browse_clubs = require('./routes/browse_clubs');
 
 var app = express();
 
@@ -34,6 +35,7 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', homepage.view);
+app.get('/browse_clubs', browse_clubs.view)
 // Example route
 // app.get('/users', user.list);
 

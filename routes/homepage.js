@@ -17,7 +17,7 @@ exports.view = function(req, res){
         'id': 'find_club_button'
       },
       { 'name': 'Browse Clubs',
-        'id': 'browse_clubs_button'
+        'id': 'browse_clubs'
       },
       { 'name': 'Calendar of Events',
         'id': 'calendar_button'
