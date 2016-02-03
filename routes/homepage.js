@@ -14,7 +14,7 @@ exports.view = function(req, res){
         'id': 'create_profile'
       },
       { 'name': 'Find Clubs for You',
-        'id': 'find_club'
+        'id': 'find_clubs'
       },
       { 'name': 'Browse Clubs',
         'id': 'browse_clubs'

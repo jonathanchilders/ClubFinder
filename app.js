@@ -11,6 +11,8 @@ var handlebars = require('express3-handlebars')
 var homepage = require('./routes/homepage');
 var create_profile = require('./routes/create_profile')
 var browse_clubs = require('./routes/browse_clubs');
+var find_clubs = require('./routes/find_clubs');
+var register = require('./routes/register');
 
 var app = express();
 
@@ -38,6 +40,8 @@ if ('development' == app.get('env')) {
 app.get('/', homepage.view);
 app.get('/create_profile', create_profile.view)
 app.get('/browse_clubs', browse_clubs.view)
+app.get('/find_clubs', find_clubs.view)
+app.get('/register', register.view)
 
 // Example route
 // app.get('/users', user.list);
