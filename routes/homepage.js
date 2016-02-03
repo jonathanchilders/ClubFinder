@@ -20,7 +20,7 @@ exports.view = function(req, res){
         'id': 'browse_clubs'
       },
       { 'name': 'Calendar of Events',
-        'id': 'calendar'
+        'id': 'events_calendar'
       },
       { 'name': 'Register Your Club',
         'id': 'register'

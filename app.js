@@ -13,8 +13,11 @@ var create_profile = require('./routes/create_profile')
 var browse_clubs = require('./routes/browse_clubs');
 var find_clubs = require('./routes/find_clubs');
 var register = require('./routes/register');
+var events_calendar = require('./routes/events_calendar');
+
 
 var app = express();
+
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -38,10 +41,13 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', homepage.view);
+
 app.get('/create_profile', create_profile.view)
 app.get('/browse_clubs', browse_clubs.view)
 app.get('/find_clubs', find_clubs.view)
 app.get('/register', register.view)
+app.get('/events_calendar', events_calendar.view);
+
 
 // Example route
 // app.get('/users', user.list);
