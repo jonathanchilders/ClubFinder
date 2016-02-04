@@ -12,26 +12,18 @@
 
 <body>	
 	<div class="container">
-		<center>
-		<div class="jumbotron">
-			<h1>ClubFinder</h1>
-			<p>Find the club for you</p>
-		</div>
-		</center>
-		<center>
-			<ol>
-				{{#each Clubs}}
-					<li>
-						<div class="club">
-							<h3>{{name}}</h3>
-							<p>{{description}}</p>
-							<hr>
-						</div>
-					</li>
-
-				{{/each}}
-			</ol>
-		</center>
+		<div>
+			<h1>Browse Our Clubs</h1>
+			<p><a href = "/">Home</a></p>
+		</div>	
+		
+		{{#each Clubs}}
+			<div class="club">
+				<h3><a href="{{url}}">{{name}}</a></h3>
+				<p>{{description}}</p>
+				<hr>
+			</div>
+		{{/each}}
 
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<script src="/js/bootstrap.min.js"></script>

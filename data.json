@@ -1,20 +1,45 @@
 {
 	"Clubs": [
 		{
-			"name": "Science Fiction Club",
-			"description": "He who controls the spice controls the universe."
+			"name": "Science Fiction Lovers",
+			"description": "He who controls the spice controls the universe.",
+			"url": "https://en.wikipedia.org/wiki/Dune_(novel)"
 		},
 		{
 			"name": "Starcraft 2 Club",
-			"description": "My life for Auir!"
+			"description": "My life for Auir!",
+			"url": "http://us.battle.net/sc2/en/legacy-of-the-void/"
 		},
 		{
 			"name": "Bad Coders Club",
-			"description": "enum Bool {True, False, FileNotFound};"
+			"description": "enum Bool {True, False, FileNotFound};",
+			"url": "http://thedailywtf.com/"
 		},
 		{
 			"name": "Star Wars Fans",
-			"description": "May the force be with you!"
+			"description": "May the force be with you!",
+			"url": "http://www.starwars.com/"
+		},
+		{
+			"name": "Chess Players",
+			"description": "Queen to E3",
+			"url": "http://www.expertchessstrategies.com/chess-tips.shtml"
+		},
+		{
+			"name": "Gym Rats",
+			"description": "Do you even lift bro?",
+			"url": "http://shop.brosciencelife.com"
 		}
+	],
+
+	"Interests": [
+		"Science Fiction",
+		"Coding",
+		"Video Games",
+		"Anime",
+		"Chess",
+		"Dance",
+		"Fitness",
+		"Underwater Basket Weaving"
 	]
 }
