@@ -1,3 +1,6 @@
+var data = require('../data.json');
+
 exports.view = function(req, res){
-  res.render('browse_clubs');
+	console.log(data);
+	res.render('browse_clubs', data);
 };

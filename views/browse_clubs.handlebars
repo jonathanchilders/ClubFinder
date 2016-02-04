@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<title>HCI Project Portfolio</title>	
+	<title>Browse Clubs</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -14,13 +14,27 @@
 	<div class="container">
 		<center>
 		<div class="jumbotron">
-			<h1>Browse Clubs</h1>
-			<p>Search for a club</p>
+			<h1>ClubFinder</h1>
+			<p>Find the club for you</p>
 		</div>
 		</center>
-	</div>
+		<center>
+			<ol>
+				{{#each Clubs}}
+					<li>
+						<div class="club">
+							<h3>{{name}}</h3>
+							<p>{{description}}</p>
+							<hr>
+						</div>
+					</li>
 
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
+				{{/each}}
+			</ol>
+		</center>
+
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+	</div>
 </body>
 </html>
