@@ -26,20 +26,36 @@
 			"url": "http://www.expertchessstrategies.com/chess-tips.shtml"
 		},
 		{
-			"name": "Gym Rats",
+			"name": "Gym Bros",
 			"description": "Do you even lift bro?",
 			"url": "http://shop.brosciencelife.com"
 		}
 	],
 
 	"Interests": [
-		"Science Fiction",
-		"Coding",
-		"Video Games",
-		"Anime",
-		"Chess",
-		"Dance",
-		"Fitness",
-		"Underwater Basket Weaving"
+		{
+			"name": "Science Fiction"
+		},
+		{
+			"name": "Coding"
+		},
+		{
+			"name": "Video Games"
+		},
+		{
+			"name": "Anime"
+		},
+		{
+			"name": "Chess"
+		},
+		{
+			"name": "Dance"
+		},
+		{
+			"name": "Fitness"
+		},
+		{
+			"name": "Underwater Basket Weaving"
+		}
 	]
 }

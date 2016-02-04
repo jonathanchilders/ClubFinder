@@ -12,12 +12,24 @@
 
 <body>	
 	<div class="container">
-		<center>
-		<div class="jumbotron">
-			<h1>Find a Club!</h1>
-			<p>Find a club tailored for you</p>
-		</div>
-		</center>
+		<div>
+			<h1>Find The Club For You</h1>
+			<p><a href="/">Home</a></p>
+		</div>	
+
+		<h2>What Are You Interested In?</h2>
+		<hr>
+		{{#each Interests}}
+			<div class="interest">
+				<input type="checkbox" name="interest"> {{name}}<br>
+				<hr>
+			</div>
+		{{/each}}
+
+		<a href="/browse_clubs" onclick="document.formName.submit();return false;">Submit</a>
+
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
 	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
