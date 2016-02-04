@@ -7,14 +7,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="/css/introHCI.css" rel="stylesheet"> 
+	<link href="/css/common.css" rel="stylesheet">
 </head>
 
 <body>	
+	<div class="topcorner">
+		<button class="button">
+	      	<span>
+	      		<a href="/">Home</a>
+	      	</span>
+	    </button>
+	</div>
+
 	<div class="container">
 		<div>
 			<h1>Browse Our Clubs</h1>
-			<p><a href="/">Home</a></p>
 		</div>	
 
 		{{#each Clubs}}

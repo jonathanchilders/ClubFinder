@@ -7,14 +7,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="/css/introHCI.css" rel="stylesheet"> 
+	<link href="/css/common.css" rel="stylesheet">
 </head>
 
 <body>	
+	<div class="topcorner">
+		<button class="button">
+	      	<span>
+	      		<a href="/">Home</a>
+	      	</span>
+	    </button>
+	</div>
+
 	<div class="container">
 		<div>
 			<h1>Find The Club For You</h1>
-			<p><a href="/">Home</a></p>
 		</div>	
 
 		<h2>What Are You Interested In?</h2>
@@ -26,7 +33,11 @@
 			</div>
 		{{/each}}
 
-		<a href="/browse_clubs" onclick="document.formName.submit();return false;">Submit</a>
+		<button class="button">
+	      	<span>
+	      		<a href="/browse_clubs">Submit</a>
+	      	</span>
+	    </button>
 
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<script src="/js/bootstrap.min.js"></script>
