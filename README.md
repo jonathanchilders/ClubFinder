@@ -7,3 +7,9 @@ In the interest of keeping the code in our repo consistent and organized:
 - Add any styling which will only be used by 1 page to css/page_name.css
 - The above rules apply to Javascript.
 
+
+TODO list:
+
+- Add nav bar to each page
+- Put login/create account/Home in nav bar
+- Unify club styling with homepage styling
