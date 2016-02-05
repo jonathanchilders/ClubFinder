@@ -11,17 +11,17 @@
 </head>
 
 <body>	
-	<div class="topcorner">
+	<div class="container">
+		<div class="topcorner">
 		<button class="button">
 	      	<span>
 	      		<a href="/">Home</a>
 	      	</span>
 	    </button>
-	</div>
+		</div>
 
-	<div class="container">
 		<div>
-			<h1>Browse Our Clubs</h1>
+			<h2>Browse Our Clubs</h2>
 		</div>	
 
 		{{#each Clubs}}
@@ -31,9 +31,9 @@
 				<hr>
 			</div>
 		{{/each}}
-
-		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="/js/bootstrap.min.js"></script>
 	</div>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
