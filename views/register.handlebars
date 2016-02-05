@@ -8,6 +8,7 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/introHCI.css" rel="stylesheet"> 
+	<link href="/css/register.css" rel="stylesheet">
 </head>
 
 <body>	
@@ -16,6 +17,31 @@
 		<div class="jumbotron">
 			<h1>Register your club</h1>
 			<p>Add your club to the registry so that people may join!</p>
+		</div>
+		</center>
+	</div>
+	<div id="body1">
+		<center>
+		<div>
+			<form>Club Name:
+				<br><input type="text" name="clubname"></br>
+			</form>
+		</div>
+		<div>
+			<textarea name="description" rows="20" cols="60">A description of what your club does:</textarea>
+		</div>
+		<div>
+			<select name="Club Tags">
+				<option value="default">(Choose search tag)</option>
+				<option value="science">Science</option>
+				<option value ="games">Games</option>
+				<option value ="coding">Coding</option>
+				<option value ="sports">Sports</option>
+				<option value ="volunteering">Volunteering</option>
+			</select>
+		</div>
+		<div>
+			<button type="button" onclick="alert('Your club has been saved')">Register your club</button>
 		</div>
 		</center>
 	</div>
