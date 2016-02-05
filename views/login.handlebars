@@ -7,39 +7,41 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/introHCI.css" rel="stylesheet"> 
 	<link href="/css/common.css" rel="stylesheet">
 </head>
 
-<body>
+<body>	
 	<div class="navbar">
 		<ul>
-			<li><a href="/login">Login</a></li>
 			<li><a href="/create_profile">Create Profile</a></li>
+			<li><a class="active" href="/">Home</a></li>
 			
 		</ul>
 	</div>
+
 	<div class="container">
-		<center>
 		<div>
-			<h1>ClubFinder</h1>
-			<p>Find the club for you</p>
+			<h1>Login</h1>
 		</div>
-		</center>
-		<center>
-			<ol>
-	    	{{#each homepage_options}}
-	      		<ul>
-	      			<button class="button">
-	      				<span>
-	      					<a href="{{id}}">{{name}}</a>
-	      				</span>
-	      			</button>
-	      		</ul>
-	    	{{/each}}
-	    	</ol>
-	    </center>
+
+		<div class="login_group">
+			<label for="user_email">User Email:</label>
+			<input type="text" class="form-control" id="user_email" placeholder="User Email" name="user_email">	
+			<br>
+			<label for="password">Password:</label>
+			<input type="password" class="form-control" id="password" placeholder="Password" name="password">
+		</div>
+
+		<button class="button">
+	      	<span>
+	      		<a href="/">Submit</a>
+	      	</span>
+	    </button>
 
 	</div>
+
+
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>

@@ -9,30 +9,13 @@
 	color: #CC00AA;
 }
 
-.jumbotron {
-	position: relative;
-	background: none;
-}
 
-.jumbotron:after {
-     content:"";
-     /*background: url("../images/Geisel.jpg");*/
-     /* background-color: white; */
-     opacity: 0.2;
-     top: 0;
-     left: 0;
-     bottom: 0;
-     right: 0;
-     position: relative;
-     z-index: 0;	
-}
-
-.jumbotron h1 {
+h1 {
   color: #FFFFFF;
 
 }
 
-.jumbotron p {
+p {
      color: #FFFFFF;
      text-align: center;
 }
@@ -52,25 +35,40 @@ ol{
 ul {
   padding-left: 0px;
 }
-/*
-.button {
-  border-radius: 4px;
-  background-color: Lightblue;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width:  280px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
-*/
-body{
+
+.navbar li {
+  float: right;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover:not(.active) {
+  background-color: #111;
+}
+
+.navbar .active {
+  background-color: #4CAF50;
+}
+
+html,body{
     position: relative;
     width: 100%;
     height:100%;
+
     display: block;
     background: white;/* background color of app*/
     background-image: url("../images/Homepage.jpg");
@@ -90,29 +88,3 @@ body{
   background: white;/*default background color for buttons*/
 }
 
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  /* content: '»'; */
-  position: absolute;
-  opacity: 0.5;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-} 
-
-.button:hover span {
- /*  padding-right: 25px; */
- /* background-color: red;*/
-}
-
-.button:hover span:after {
-  opacity: 1;
-  background-color: Red;
-  right: 0;
-}

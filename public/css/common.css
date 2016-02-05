@@ -1,44 +1,98 @@
-.topcorner{
-   position:absolute;
-   top:0;
-   right:0;
-  }
+/* applies to anything of class "example-class-selector" */
+.example-class-selector {
+	margin-top: 2em;
+}
 
- .button {
-  border-radius: 4px;
-  background-color: Lightblue;
-  border: none;
+/* applies to any <p> descendants of an element of class "example-class-selector" */
+.example-class-selector p {
+	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
+	color: #CC00AA;
+}
+
+
+h1 {
   color: #FFFFFF;
+
+}
+
+p {
+     color: #FFFFFF;
+     /*text-align: center;*/
+}
+
+.project a {
+     text-align: center;
+}
+
+.button_list{
   text-align: center;
-  font-size: 28px;
-  padding: 10px;
-  width:  80;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
 }
 
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+ol{
+  padding-left: 0px;
 }
 
-.button span:after {
-  content: '»';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+ul {
+  padding-left: 0px;
 }
 
-.button:hover span {
-  padding-right: 25px;
+.navbar {
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    margin-bottom: 0px;
 }
 
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
+
+.navbar li {
+  float: right;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover:not(.active) {
+  background-color: #111;
+}
+
+.navbar .active {
+  background-color: #4CAF50;
+}
+
+html,body{
+    position: relative;
+    width: 100%;
+    height:100%;
+    color: #FFFFFF;
+    display: block;
+    background: white;/* background color of app*/
+    background-image: url("../images/Homepage.jpg");
+    background-size: 100% 100%;
+}
+
+.button{
+  margin:5px 0;
+  font-size:20px;
+  color:#000000; /* center font color*/
+  text-align: center;
+  -moz-border-radius: 12px; /* FF1+ */
+  -webkit-border-radius: 12px; /* Saf3-4 */
+    border-radius: 12px; /* Opera 10.5, IE 9, Saf5, Chrome */ 
+    height: 70px; /* height for all three buttons on front page*/
+    width: 280px;
+  background: white;/*default background color for buttons*/
+}
+
