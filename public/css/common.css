@@ -64,12 +64,12 @@ ul {
   text-decoration: none;
 }
 
-.navbar a:hover:not(.active) {
+.navbar a:hover {
   background-color: #111;
 }
 
 .navbar .active {
-  background-color: #4CAF50;
+  background-color: #333;
 }
 
 html,body{
