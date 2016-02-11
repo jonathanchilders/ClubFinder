@@ -7,32 +7,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="/css/introHCI.css" rel="stylesheet"> 
-	<link href="/css/register.css" rel="stylesheet">
+	<link href="/css/common.css" rel="stylesheet">
+	<link href="/css/register.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>	
+	<div class="navbar">
+		<ul>
+			<li><a href="/login">Login</a></li>
+			<li><a href="/create_profile">Create Profile</a></li>
+			<li><a class="active" href="/">Home</a></li>
+		</ul>
+	</div>
 	<div class="container">
-		<center>
-		<div class="jumbotron">
-			<h1>Register your club</h1>
-			<p>Add your club to the registry so that people may join!</p>
-		</div>
-		</center>
+		<div>
+			<h1>Club Registration</h1>
+		</div>		
 	</div>
 	<div id="body1">
 		<center>
 		<div>
-			<form>Club Name:
-				<br><input type="text" name="clubname"></br>
-			</form>
+		<form>
+			<fieldset>
+			<legend><font size ="5" color="3366ff">Registration Form:</font></legend>
+				Club Name:<br><input type="text" name="clubname"></br>
+			</fieldset>
+		</form>
+		</div>
+		<legend></legend>
+		<div>
+			<textarea name="description" rows="15" cols="30">A description of what your club does:</textarea>
 		</div>
 		<div>
-			<textarea name="description" rows="20" cols="60">A description of what your club does:</textarea>
-		</div>
-		<div>
-			<select name="Club Tags">
-				<option value="default">(Choose search tag)</option>
+		<legend><font size ="5" color="3366ff">Club Search Tags:</font></legend>
+			<SELECT NAME="Club Tags" MULTIPLE SIZE=5>
 				<option value="science">Science</option>
 				<option value ="games">Games</option>
 				<option value ="coding">Coding</option>
@@ -40,9 +48,12 @@
 				<option value ="volunteering">Volunteering</option>
 			</select>
 		</div>
-		<div>
-			<button type="button" onclick="alert('Your club has been saved')">Register your club</button>
-		</div>
+		<legend></legend>
+		<button class="button">
+	      	<span>
+	      		<a href="/">Register your club</a>
+	      	</span>
+	    </button>
 		</center>
 	</div>
 
