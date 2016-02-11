@@ -15,7 +15,7 @@ var find_clubs = require('./routes/find_clubs');
 var register = require('./routes/register');
 var events_calendar = require('./routes/events_calendar');
 var login = require('./routes/login');
-
+var search_results = require('./routes/search_results');
 
 var app = express();
 
@@ -49,6 +49,7 @@ app.get('/find_clubs', find_clubs.view)
 app.get('/register', register.view)
 app.get('/events_calendar', events_calendar.view);
 app.get('/login',login.view);
+app.get('/search_results', search_results.view);
 
 
 // Example route

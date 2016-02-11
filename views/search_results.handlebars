@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<title>HCI Project Portfolio</title>	
+	<title>Search Results</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -11,36 +11,26 @@
 </head>
 
 <body>	
-
 	<div class="navbar">
 		<ul>
 			<li><a href="/login">Login</a></li>
 			<li><a href="/create_profile">Create Profile</a></li>
 			<li><a class="active" href="/">Home</a></li>
-			
 		</ul>
 	</div>
+
 	<div class="container">
-		
 		<div>
-			<h1>Club Quiz</h1>
+			<h2>Clubs you might like</h2>
 		</div>	
 
-		<h2>What Are You Interested In?</h2>
-		<hr>
-		{{#each Interests}}
-			<div class="interest">
-				<label><input type="checkbox" name="interest"> {{name}}</label><br>
+		{{#each Clubs}}
+			<div class="club">
+				<h3>{{name}}</h3>
+				<p>{{description}}</p>
 				<hr>
 			</div>
 		{{/each}}
-
-		<button class="button">
-	      	<span>
-	      		<a href="/search_results">Submit</a>
-	      	</span>
-	    </button>
-
 	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
