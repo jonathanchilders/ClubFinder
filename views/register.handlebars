@@ -24,27 +24,33 @@
 			<h1>Club Registration</h1>
 		</div>		
 		<div id="body1">	
-			<div>
-				<br>
-				<input type="text" class="form-control" id="club_name" placeholder="Club Name" name="club_name">	
-			</div>
-			<br>
-			<div>
-				<textarea name="RegisterText" cols="130" rows="5" ... placeholder="Club Description"></textarea>
-			</div>
-			<br>
-			
-			<h3>Club Search Tags:</h3>
-			<br>
-			{{#each Tags}}
-				<div class="interest">
-						<label><input type="checkbox" name="interest"> {{name}}</label><br>
-					<hr>
+			<form id="addClubForm" role="form" method="get" action="/successful_club_add">
+				<div class="form-group">
+					<br>
+					<input type="text" class="form-control" id="name" placeholder="Club Name" name="name">	
 				</div>
-			{{/each}}
+				<br>
+				<div class="form-group">
+					<textarea name="description" id="description" cols="130" rows="5" placeholder="Club Description"></textarea>
+				</div>
+				<br>
+				<div class="form-group">
+					<br>
+					<input type="text" class="form-control" id="url" placeholder="Homepage URL" name="url">	
+				</div>
+				<br>
+				
+				<h3>Club Search Tags:</h3>
+				<br>
+				{{#each Tags}}
+					<div class="interest">
+							<label><input type="checkbox" name="interest"> {{name}}</label><br>
+						<hr>
+					</div>
+				{{/each}}
+				<input type="submit" class="button" value="Register your club"/>
+			</form>
 			
-			<legend></legend>
-			<input type="button" class="button" onclick="location.href='/'" value="Register your club"/>
 		</div>
 	</div>
 
