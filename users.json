@@ -1,0 +1,14 @@
+{
+	"Users": [
+		{
+			"name" : "John 1",
+			"email" : "john1@gmail.com",
+			"password" : "abc123"
+		},
+		{
+			"name": "John 2",
+			"email": "hi@ucsd.edu",
+			"password": "qwerty"
+		}
+	]
+}
