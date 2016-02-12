@@ -8,7 +8,7 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/common.css" rel="stylesheet">
-	<link href="/css/register.css" rel="stylesheet" type="text/css">
+<!-- 	<link href="/css/register.css" rel="stylesheet" type="text/css"> -->
 </head>
 
 <body>	
@@ -23,35 +23,29 @@
 		<div>
 			<h1>Club Registration</h1>
 		</div>		
-	</div>
-	<div id="body1">
-		<center>
-		<div>
-		<form>
-			<fieldset>
-			<legend><font size ="5" color="3366ff">Registration Form:</font></legend>
-				Club Name:<br><input type="text" name="clubname"></br>
-			</fieldset>
-		</form>
+		<div id="body1">	
+			<div>
+				<br>
+				<input type="text" class="form-control" id="club_name" placeholder="Club Name" name="club_name">	
+			</div>
+			<br>
+			<div>
+				<textarea name="RegisterText" cols="130" rows="5" ... placeholder="Club Description"></textarea>
+			</div>
+			<br>
+			
+			<h3>Club Search Tags:</h3>
+			<br>
+			{{#each Tags}}
+				<div class="interest">
+						<label><input type="checkbox" name="interest"> {{name}}</label><br>
+					<hr>
+				</div>
+			{{/each}}
+			
+			<legend></legend>
+			<input type="button" class="button" onclick="location.href='/'" value="Register your club"/>
 		</div>
-		<legend></legend>
-		<div>
-			<textarea name="description" rows="15" cols="30">A description of what your club does:</textarea>
-		</div>
-		<div>
-		<legend><font size ="5" color="3366ff">Club Search Tags:</font></legend>
-			<SELECT NAME="Club Tags" MULTIPLE SIZE=5>
-				<option value="science">Science</option>
-				<option value ="games">Games</option>
-				<option value ="coding">Coding</option>
-				<option value ="sports">Sports</option>
-				<option value ="volunteering">Volunteering</option>
-			</select>
-		</div>
-		<legend></legend>
-		<input type="button" class="button" onclick="location.href='/'" value="Register your club"/>
-
-		</center>
 	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
