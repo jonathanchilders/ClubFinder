@@ -79,8 +79,23 @@ html,body{
     color: #FFFFFF;
     display: block;
     background: white;/* background color of app*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-image: url("../images/Homepage.jpg");
     background-size: 100% 100%;
+}
+
+.club .button {
+    margin:5px 0;
+  font-size:20px;
+  color:#000000; /* center font color*/
+  text-align: center;
+  -moz-border-radius: 12px; /* FF1+ */
+  -webkit-border-radius: 12px; /* Saf3-4 */
+    border-radius: 12px; /* Opera 10.5, IE 9, Saf5, Chrome */ 
+    height: 50px; /* height for all three buttons on front page*/
+    width: 200px;
+  background: white;/*default background color for buttons*/
 }
 
 .button{
@@ -91,7 +106,7 @@ html,body{
   -moz-border-radius: 12px; /* FF1+ */
   -webkit-border-radius: 12px; /* Saf3-4 */
     border-radius: 12px; /* Opera 10.5, IE 9, Saf5, Chrome */ 
-    height: 70px; /* height for all three buttons on front page*/
+    height: 80px; /* height for all three buttons on front page*/
     width: 280px;
   background: white;/*default background color for buttons*/
 }
