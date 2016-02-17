@@ -25,6 +25,7 @@ function validateLogin(result)
 	var users = result["Users"];
 	var email = $('#email').val();
 	var password = $('#password').val();
+	var validLogin = false;
 	for(var i = 0; i < users.length; i++)
 	{
 		var user = users[i];
@@ -37,20 +38,15 @@ function validateLogin(result)
 				document.cookie = 'clubbook_user_email=' + email + ';';
 				dumpCookies();
 				window.location.href = "/";
-				break;
+				validLogin = true;
 			}
-			else
-			{
-				$("#user_password").text("Invalid Password");
-				$("#alert_box").html("<h2>Invalid Credentials</h2>");
-			}
-		}
-		else
-		{
-			$("#user_password").text("Invalid Email");
-			$("#alert_box").html("<h2>Invalid Credentials</h2>");
-		}
+		}		
 	}
+	if(!validLogin)
+	{
+		$("#alert_box").html("<h2>Invalid Credentials</h2>");
+	}
+
 }
 
 function dumpCookies()
