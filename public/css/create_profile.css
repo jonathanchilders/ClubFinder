@@ -1,0 +1,20 @@
+.container label {
+  margin-left: 15px
+}
+
+.container .form-control {
+  width: 100%;
+}
+
+.container .button {
+  style="display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 50px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 0px;
+  margin-top: 10px;"
+}
