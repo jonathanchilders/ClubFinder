@@ -6,6 +6,10 @@
   width: 100%;
 }
 
+h2{
+  color: red;
+}
+
 .container .button {
   style="display: block;
   margin: 0 auto;
