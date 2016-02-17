@@ -20,16 +20,14 @@ function loginClick(e)
 	$.get("/users/", validateLogin);
 }
 
-function validateLogin(users)
+function validateLogin(result)
 {
+	var users = result["Users"];
 	var email = $('#email').val();
 	var password = $('#password').val();
-	console.log(users);
-	for(var user in users['Users'])
+	for(var i = 0; i < users.length; i++)
 	{
-		console.log(user);
-		console.log(user['email']);
-		console.log(user['password']);
+		var user = users[i];
 
 		if(user['email'] === email)
 		{
@@ -38,19 +36,19 @@ function validateLogin(users)
 			{
 				document.cookie = 'clubbook_user_email=' + email + ';';
 				dumpCookies();
-				$('#submit').event = "location.href='/';";
+				window.location.href = "/";
+				break;
 			}
 			else
 			{
 				$("#user_password").text("Invalid Password");
-				$('#submit').event = "location.href='/login';";
+				$("#alert_box").html("<h2>Invalid Credentials</h2>");
 			}
 		}
 		else
 		{
 			$("#user_password").text("Invalid Email");
-			$('#submit').event = "location.href='/login';";
-
+			$("#alert_box").html("<h2>Invalid Credentials</h2>");
 		}
 	}
 }
