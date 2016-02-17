@@ -9,15 +9,30 @@
 	color: #CC00AA;
 }
 
+*{
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+} 
 
 h1 {
-  color: #FFFFFF;
+  color: #FFD000;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  /* font-variant: small-caps;*/
+}
 
+h2{
+  color: #FFD000;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+h3 {
+  color: #FFD000;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 }
 
 p {
      color: #FFFFFF;
      /*text-align: center;*/
+
 }
 
 .project a {
@@ -72,6 +87,11 @@ ul {
   background-color: #333;
 }
 
+img {
+  position: aboslute;
+  z-index: -1;
+
+}
 html,body{
     position: relative;
     width: 100%;
@@ -81,14 +101,15 @@ html,body{
     background: white;/* background color of app*/
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url("../images/Homepage.jpg");
+/*    background-position:  bottom;*/
+    background-image: url("../images/Background.jpg");
     background-size: 100% 100%;
 }
 
 .club .button {
     margin:5px 0;
   font-size:20px;
-  color:#000000; /* center font color*/
+  color:#197FCC; /* center font color*/
   text-align: center;
   -moz-border-radius: 12px; /* FF1+ */
   -webkit-border-radius: 12px; /* Saf3-4 */
@@ -101,7 +122,7 @@ html,body{
 .button{
   margin:5px 0;
   font-size:20px;
-  color:#000000; /* center font color*/
+  color:#197FCC; /* center font color*/
   text-align: center;
   -moz-border-radius: 12px; /* FF1+ */
   -webkit-border-radius: 12px; /* Saf3-4 */
@@ -109,5 +130,6 @@ html,body{
     height: 80px; /* height for all three buttons on front page*/
     width: 280px;
   background: white;/*default background color for buttons*/
+
 }
 
