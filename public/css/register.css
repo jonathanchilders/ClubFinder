@@ -1,20 +1,20 @@
-#body1	{
-	margin-top:30px;
-	margin-bottom:30px;
-	margin-right:30px;
-	margin-left:30px;
+.container label {
+  margin-left: 0px
 }
 
-#body1 div	{
-	margin-top:30px;
-	margin-bottom:30px;
-	margin-right:30px;
-	margin-left:30px;
+.container .form-control {
+  width: 100%;
 }
 
-legend {
-	color: #6699ff;
-	font-weight: bold;
-	padding-left: 20px;
-	padding-right: 20px;
+.container .button {
+  style="display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 0px;
+  margin-top: 10px;"
 }
