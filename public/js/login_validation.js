@@ -11,18 +11,26 @@ $(document).ready(function(){
 function initializePage() 
 {
 	console.log("Javascript connected!");
-	$('.submit').click(loginClick);
+	$('#submit').click(loginClick);
 }
 
 function loginClick(e)
 {
 	e.preventDefault();
-	var users = JSON.parse('../../users.json');
-	var email = $(('.email').text()).trim();
-	var password = $(('.password').text()).trim();
+	$.get("/users/", validateLogin);
+}
 
-	for(var user in users)
+function validateLogin(users)
+{
+	var email = $('#email').val();
+	var password = $('#password').val();
+	console.log(users);
+	for(var user in users['Users'])
 	{
+		console.log(user);
+		console.log(user['email']);
+		console.log(user['password']);
+
 		if(user['email'] === email)
 		{
 			//TODO: Fix this to use a salted hash for password verification
@@ -30,18 +38,18 @@ function loginClick(e)
 			{
 				document.cookie = 'clubbook_user_email=' + email + ';';
 				dumpCookies();
-				$('.submit').event = "location.href='/';";
+				$('#submit').event = "location.href='/';";
 			}
 			else
 			{
-				$(".user_password").text("Invalid Password");
-				$('.submit').event = "location.href='/login';";
+				$("#user_password").text("Invalid Password");
+				$('#submit').event = "location.href='/login';";
 			}
 		}
 		else
 		{
-			$(".user_password").text("Invalid Email");
-			$('.submit').event = "location.href='/login';";
+			$("#user_password").text("Invalid Email");
+			$('#submit').event = "location.href='/login';";
 
 		}
 	}
@@ -53,12 +61,12 @@ function dumpCookies()
     console.log ("All Cookies : " + allcookies );
                
     // Get all the cookies pairs in an array
-    cookiearray = allcookies.split(';');
+    var cookiearray = allcookies.split(';');
                
     // Now take key value pair out of this array
     for(var i=0; i<cookiearray.length; i++){
-		name = cookiearray[i].split('=')[0];
-      	value = cookiearray[i].split('=')[1];
+		var name = cookiearray[i].split('=')[0];
+      	var value = cookiearray[i].split('=')[1];
       	console.log ("Key is : " + name + " and Value is : " + value);
    	}
 }
