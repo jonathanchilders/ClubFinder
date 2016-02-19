@@ -29,10 +29,10 @@ function findClubs(result)
 	for(var i=0; i<cookiearray.length; i++)
 	{
 		var name = cookiearray[i].split('=')[0];
-      	var email = cookiearray[i].split('=')[1];
+      	var value = cookiearray[i].split('=')[1];
       	if(name == "clubbook_user_email")
       	{
-      		user_email = email;
+      		user_email = value;
       	}
    	}
 
