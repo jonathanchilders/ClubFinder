@@ -27,17 +27,23 @@
 		</center>
 		<center>
 			<ol>
-	    	{{#each homepage_options}}
 	      		<ul>
-	      			<input type="button" class="button" onclick="location.href='{{id}}';" value='{{name}}' />
+	      			<input type="button" class="button" value='Find Clubs For You' id='find_clubs' />
 	      		</ul>
-	    	{{/each}}
+	      		<ul>
+	      			<input type="button" class="button" onclick="location.href='/browse_clubs';" value='Browse Clubs' id='browse_clubs' />
+				</ul>
+	      		<ul>
+	      			<input type="button" class="button" onclick="location.href='/register';" value='Register Your Club' id='register' />
+	      		</ul>
 	    	</ol>
 	    </center>
 
 	</div>
 
+
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/homepage_events.js"></script>
 </body>
 </html>
