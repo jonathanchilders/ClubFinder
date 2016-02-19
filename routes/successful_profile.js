@@ -12,7 +12,8 @@ exports.addUser = function(req, res){
   {
   	'name' : name,
   	'email' : email,
-  	'password' : password
+  	'password' : password,
+    'tags': []
   }
 
 
