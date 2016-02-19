@@ -19,6 +19,8 @@ var search_results = require('./routes/search_results');
 var successful_club_add = require('./routes/successful_club_add');
 var successful_profile = require('./routes/successful_profile');
 var users = require('./routes/users');
+var clubs = require('./routes/clubs');
+var tags = require('./routes/tags');
 
 var app = express();
 
@@ -56,7 +58,8 @@ app.get('/search_results', search_results.view);
 app.get('/successful_club_add', successful_club_add.addClub);
 app.get('/successful_profile', successful_profile.addUser);
 app.get('/users', users.users);
-
+app.get('/clubs', clubs.clubs);
+app.get('/tags', tags.tags);
 
 // Example route
 // app.get('/users', user.list);

@@ -1,14 +1,39 @@
 {
-	"Users": [
+	"Users": 
+	[
 		{
 			"name" : "John 1",
 			"email" : "john1@gmail.com",
-			"password" : "abc123"
+			"password" : "abc123",
+			"tags" : 
+			[
+				{
+					"name" : "Science Fiction"
+				},
+				{
+					"name" : "Video Games"
+				},
+				{
+					"name" : "Anime"
+				}
+			]
 		},
 		{
 			"name": "John 2",
 			"email": "hi@ucsd.edu",
-			"password": "qwerty"
+			"password": "qwerty",
+			"tags" : 
+			[
+				{
+					"name" : "Science Fiction"
+				},
+				{
+					"name" : "Fitness"
+				},
+				{
+					"name" : "Underwater Basket Weaving"
+				}
+			]
 		}
 	]
 }
