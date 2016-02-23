@@ -18,12 +18,11 @@ function submitClick(e)
 function addTags(result)
 {
 	var users = result['Users'];
-	var current_user_email = matchCookieToUser(users);
+	var current_user = matchCookieToUser(users);
 	var tags = [];
 	$('.interest_box').each(function () {
 		if(this.checked)
 		{
-			console.log($(this).attr('value'));
 			var newTag = 
   			{
   				'name' : $(this).attr('value')
@@ -31,9 +30,25 @@ function addTags(result)
 			tags.push(newTag); 
 		}
   	});
-	console.log(tags);
-	var jsonTags = JSON.stringify(tags);
-	console.log(jsonTags);
+  	var tagObject = 
+  	{
+  		'tags' : tags
+  	}
+
+	var userData = generatePostRequestData(users, current_user, tags);
+	$.ajax({
+		url : '/users', 
+		type : 'PUT', 
+		data : userData,
+		contentType : 'application/json',
+		dataType: 'json',
+		success: function(data) {
+        		console.log('success');
+                console.log(data);
+        	}
+		});
+
+	window.location.href = "/search_results"
 }
 
 function matchCookieToUser(users)
@@ -57,4 +72,29 @@ function matchCookieToUser(users)
       		}
       	} 
    	}
+
+   	window.alert("User Not Found");
+}
+
+function generatePostRequestData(userList, user, tags)
+{
+	var user_object = 
+	{
+		'name' : user['name'],
+		'email' : user['email'],
+		'password' : user['password'],
+		tags 
+	}
+	
+	var resultList = userList;
+	for(var i = 0; i < userList.length; i++)
+	{
+		if(userList[i] === user)
+		{
+			resultList[i] = user_object;
+		}
+	}
+	var jsonList = JSON.stringify(resultList);
+	
+	return jsonList;
 }

@@ -10,43 +10,47 @@ $(document).ready(function(){
  */
 function initializePage() 
 {
-	console.log("Javascript connected!");
-	$('#submit').click(searchClick);
+	$.get("/users/", 
+		function(data){
+			matchCookieToUser(data)
+		});
 }
 
-function searchClick(e)
+function matchCookieToUser(users)
 {
-	e.preventDefault();
-	$.get("/users/", findClubs);
-}
-
-function findClubs(result)
-{
-	var allcookies = document.cookie;
-	var cookiearray = allcookies.split(';');
-	var user_email = '';
-
-	for(var i=0; i<cookiearray.length; i++)
-	{
+	var allcookies = document.cookie;               
+    var cookiearray = allcookies.split(';');
+    var userList = users["Users"];
+      
+    for(var i=0; i<cookiearray.length; i++)
+    {
 		var name = cookiearray[i].split('=')[0];
       	var value = cookiearray[i].split('=')[1];
       	if(name == "clubbook_user_email")
       	{
-      		user_email = value;
-      	}
+      		for(var i = 0; i < userList.length; i++)
+      		{
+      			var user = userList[i];
+      			if(user["email"] == value)
+      			{
+      				$.get("/clubs/", 
+      					function(data){
+							setClubs(data, user);
+						});
+      			}
+      		}
+      	} 
    	}
-
-	var users = result['Users'];
-	var user = users['email'];
-
-	$.get("/clubs/", 
-		function(data){
-			matchUser(data, user);
-		} );
 }
 
-function matchUser(result, userInfo)
+function setClubs(clubList, user)
 {
+	buildPage(clubList["Clubs"], user);
+}
 
+function buildPage(clubs, currentUser)
+{
+	console.log(currentUser);
+	console.log(clubs);
 }
 
