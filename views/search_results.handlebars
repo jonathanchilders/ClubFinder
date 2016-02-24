@@ -24,17 +24,13 @@
 			<h2>Clubs you might like</h2>
 		</div>	
 
-		{{#each Clubs}}
-			<div class="club">
-				<h3>{{name}}</h3>
-				<p>{{description}}</p>
-				<input type="button" class="button" onclick="location.href='{{url}}';" value="Learn More" />
-				<hr>
-			</div>
-		{{/each}}
+		<div id="result_list">
+			
+		</div>
 	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	<script src="js/display_search_results.js"></script>
 </body>
 </html>

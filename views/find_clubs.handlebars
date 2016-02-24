@@ -30,16 +30,17 @@
 		<h2>What Are You Interested In?</h2>
 		<hr>
 		{{#each Tags}}
-			<div class="interest">
-				<label><input type="checkbox" name="interest"> {{name}}</label><br>
+			<div>
+				<label><input class="interest_box" type="checkbox" value="{{name}}" id="{{name}}">{{name}}</label><br>
 				<hr>
 			</div>
 		{{/each}}
 
-		<input type="button" class="button" onclick="location.href='/search_results';" value="Submit" />
+		<input type="button" class="button" value="Submit" id="submit"/>
 	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/add_tags_to_user.js"></script>
 </body>
 </html>

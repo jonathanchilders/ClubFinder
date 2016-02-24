@@ -1,13 +1,9 @@
 'use strict';
 
-// Call this function when the page loads (the "ready" event)
 $(document).ready(function(){
 	initializePage();
 })
 
-/*
- * Function that is called when the document is ready.
- */
 function initializePage() 
 {
 	$.get("/users/", 
@@ -50,7 +46,21 @@ function setClubs(clubList, user)
 
 function buildPage(clubs, currentUser)
 {
-	console.log(currentUser);
-	console.log(clubs);
+	//TODO: Sort clubs here
+	var pageHTML = '';
+	for(var i = 0; i < clubs.length; i++)
+	{
+		var club = clubs[i];
+		var clubHTML = '<div>' + 
+							'<h3>' + club["name"] + '</h3>' + 
+							'<p>'+ club["description"] + '</p>' +
+							'<input type=' + '"button"' + 'class=' + '"button"' +
+							'onclick="location.href=' + "'" + club["url"] + "'" + ';"' + 
+							'value="Learn More" />' + 
+							'<hr>' + 
+						'</div>';
+		pageHTML += clubHTML;
+	}
+	$("#result_list").html(pageHTML);
 }
 
