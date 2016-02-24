@@ -13,9 +13,7 @@ exports.addUser = function(req, res){
   	'name' : name,
   	'email' : email,
   	'password' : password,
-    'tags': []
   }
-
 
   users['Users'].push(newUser);
   console.log(users);

@@ -13,7 +13,7 @@
 			"name": "Anime"
 		},
 		{
-			"name": "Chess"
+			"name": "Board Games"
 		},
 		{
 			"name": "Dance"
@@ -22,7 +22,58 @@
 			"name": "Fitness"
 		},
 		{
-			"name": "Underwater Basket Weaving"
+			"name": "Music"
+		},
+		{
+			"name": "Alcohol"
+		},
+		{
+			"name": "Photography"
+		},
+		{
+			"name": "Professional"
+		},
+		{
+			"name": "Weightlifting"
+		},
+		{
+			"name": "Running"
+		},
+		{
+			"name": "Sports"
+		},
+		{
+			"name": "Movies"
+		},
+		{
+			"name": "Health"
+		},
+		{
+			"name": "Business"
+		},
+		{
+			"name": "Outdoors"
+		},
+		{
+			"name": "Social"
+		},
+		{
+			"name": "Hobby"
+		},
+		{
+			"name": "Culture"
+		},
+		{
+			"name": "Cosplay"
+		},
+		{
+			"name": "Yoga"
+		},
+		{
+			"name": "Bro"
+		},
+		{
+			"name": "Food"
 		}
 	]
 }

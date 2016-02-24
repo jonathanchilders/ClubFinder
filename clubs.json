@@ -3,32 +3,113 @@
 		{
 			"name": "Science Fiction Lovers",
 			"description": "He who controls the spice controls the universe.",
-			"url": "https://en.wikipedia.org/wiki/Dune_(novel)"
+			"url": "https://en.wikipedia.org/wiki/Dune_(novel)",
+			"tags" : [
+				{
+      				"name": "Science Fiction"
+    			},
+    			{
+      				"name": "Cosplay"
+    			},
+    			{
+    				"name": "Movies"
+    			}
+			]
 		},
 		{
 			"name": "Starcraft 2 Club",
 			"description": "My life for Auir!",
-			"url": "http://us.battle.net/sc2/en/legacy-of-the-void/"
+			"url": "http://us.battle.net/sc2/en/legacy-of-the-void/",
+			"tags" : [
+				{
+      				"name": "Science Fiction"
+    			},
+    			{
+      				"name": "Video Games"
+    			},
+    			{
+    				"name": "Hobby"
+    			}
+			]
 		},
 		{
 			"name": "Crappy Coders Club",
 			"description": "enum Bool {True, False, FileNotFound};",
-			"url": "http://thedailywtf.com/"
+			"url": "http://thedailywtf.com/",
+			"tags" : [
+				{
+      				"name": "Coding"
+    			},
+    			{
+      				"name": "Professional"
+    			},
+    			{
+    				"name": "Business"
+    			}
+			]
 		},
 		{
 			"name": "Star Wars Fans",
 			"description": "May the force be with you!",
-			"url": "http://www.starwars.com/"
+			"url": "http://www.starwars.com/",
+			"tags" : [
+				{
+      				"name": "Science Fiction"
+    			},
+    			{
+      				"name": "Movies"
+    			},
+    			{
+      				"name": "Culture"
+    			},
+    			{
+    				"name": "Cosplay"
+    			}
+			]
 		},
 		{
 			"name": "Chess Players",
 			"description": "Queen to E3",
-			"url": "http://www.expertchessstrategies.com/chess-tips.shtml"
+			"url": "http://www.expertchessstrategies.com/chess-tips.shtml",
+			"tags" : [
+				{
+      				"name": "Social"
+    			},
+    			{
+      				"name": "Hobbies"
+    			},
+    			{
+      				"name": "Board Games"
+    			}
+			]
 		},
 		{
 			"name": "Gym Bros",
 			"description": "Do you even lift bro?",
-			"url": "http://shop.brosciencelife.com"
+			"url": "http://shop.brosciencelife.com",
+			"tags" : [
+				{
+      				"name": "Alcohol"
+    			},
+    			{
+      				"name": "Weightlifting"
+    			},
+    			{
+      				"name": "Social"
+    			},
+    			{
+      				"name": "Health"
+    			},
+    			{
+      				"name": "Running"
+    			},
+    			{
+      				"name": "Bro"
+    			},
+    			{
+      				"name": "Fitness"
+    			}
+			]
 		}
 	]
 }
