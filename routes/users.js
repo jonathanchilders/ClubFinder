@@ -7,5 +7,9 @@ exports.getUsers = function(req, res) {
 exports.putUsers = function(req,res){
 	var data = req.body
 	users = {"Users" : data};
-	//users["Users"].push(data);
+}
+
+exports.postUsers = function(req,res){
+	var data = req.body;
+	users["Users"].push(data);
 }

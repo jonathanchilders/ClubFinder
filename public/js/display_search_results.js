@@ -22,19 +22,18 @@ function matchCookieToUser(users)
     {
 		var name = cookiearray[i].split('=')[0];
       	var value = cookiearray[i].split('=')[1];
-      	console.log("Email: " + value);
       	if(name == "clubbook_user_email")
       	{
       		for(var j = 0; j < userList.length; j++)
       		{
       			var user = userList[j];
-      			console.log("Compare email: " + user["email"]);
       			if(user["email"] == value)
       			{
       				$.get("/clubs/", 
       					function(data){
 							setClubs(data, user);
 						});
+      				break;
       			}
       		}
       	} 

@@ -62,6 +62,7 @@ app.get('/clubs', clubs.clubs);
 app.get('/tags', tags.tags);
 
 app.put('/users', users.putUsers);
+app.post('/users', users.postUsers);
 
 // Example route
 // app.get('/users', user.list);
