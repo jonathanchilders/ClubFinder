@@ -58,11 +58,13 @@ app.get('/search_results', search_results.view);
 app.get('/successful_club_add', successful_club_add.addClub);
 app.get('/successful_profile', successful_profile.addUser);
 app.get('/users', users.getUsers);
-app.get('/clubs', clubs.clubs);
-app.get('/tags', tags.tags);
+app.get('/clubs', clubs.getClubs);
+app.get('/tags', tags.getTags);
 
 app.put('/users', users.putUsers);
 app.post('/users', users.postUsers);
+app.post('/clubs',clubs.postClubs);
+app.post('/tags',tags.postTags);
 
 // Example route
 // app.get('/users', user.list);

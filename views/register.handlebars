@@ -27,45 +27,43 @@
 			<h1>Club Registration</h1>
 		</div>		
 		<div id="body1">	
-			<form id="addClubForm" role="form" method="get" action="/successful_club_add">
-				<div class="form-group">
-					<br>
-					<label for="name"> Enter Club Name! </label>
-					<input type="text" class="form-control" id="name" placeholder="Club Name" name="name">	
+			<div >
+				<br>
+				<label for="name"> Enter Club Name! </label>
+				<input type="text" class="form-control" id="name" placeholder="Club Name" name="name">	
+			</div>
+	<!-- 		<br> -->
+			<div>
+				<label for="description"> Describe Your Club! </label>
+				<input type="text" name="description" id="description" class="form-control" placeholder="Club Description"></input>
+			</div>
+			<div>
+	<!-- 			<br> -->
+				<label for="url"> Add a Link to Your Homepage! </label>
+				<input type="text" class="form-control" id="url" placeholder="Homepage URL" name="url">	
+			</div>
+			<br>
+			
+			<h3>Club Search Tags:</h3>
+			<br>
+			{{#each Tags}}
+				<div class="interest">
+						<label><input type="checkbox" id="{{name}}" name="interest"> {{name}}</label><br>
+					<hr>
 				</div>
-		<!-- 		<br> -->
-				<div class="form-group">
-					<label for="description"> Describe Your Club! </label>
-					<input type="text" name="description" id="description" class="form-control" placeholder="Club Description"></input>
+			{{/each}}
+			<div id="tags">
+				<input type="text" class="form-control" name="tag" placeholder="Add a tag" />
 				</div>
-				<div class="form-group">
-		<!-- 			<br> -->
-					<label for="url"> Add a Link to Your Homepage! </label>
-					<input type="text" class="form-control" id="url" placeholder="Homepage URL" name="url">	
-				</div>
-				<br>
-				
-				<h3>Club Search Tags:</h3>
-				<br>
-				{{#each Tags}}
-					<div class="interest">
-							<label><input type="checkbox" name="interest"> {{name}}</label><br>
-						<hr>
-					</div>
-				{{/each}}
-				<div class="form-group" id="tags">
-    				<input type="text" class="form-control" name="tag" placeholder="Add a tag" />
-  				</div>
-				<input type="submit" class="button" value="Register"/>
-				<br>
-				<br>
-
-			</form>
+			<input type="submit" class="button" value="Register"/>
+			<br>
+			<br>
 			
 		</div>
 	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/pushClubs.js"></script>
 </body>
 </html>
