@@ -89,16 +89,23 @@ function buildPage(clubs, currentUser)
 	for(var i = 0; i < matchList.length; i++)
 	{
 		var match = matchList[i];
-		var club = match["club"];
-		var clubHTML = '<div>' + 
-							'<h3>' + club["name"] + '</h3>' + 
-							'<p>'+ club["description"] + '</p>' +
-							'<input type=' + '"button"' + 'class=' + '"button"' +
-							'onclick="window.open(' + "'" + club["url"] + "'" + "," + "'" + "_blank" + "'" +');"' + 
-							'value="Learn More" />' + 
-							'<hr>' + 
-						'</div>';
-		pageHTML += clubHTML;
+		if(match["matches"] > 0)
+		{
+			var club = match["club"];
+			var clubHTML = '<div>' + 
+								'<h3>' + club["name"] + '</h3>' + 
+								'<p>'+ club["description"] + '</p>' +
+								'<input type=' + '"button"' + 'class=' + '"button"' +
+								'onclick="window.open(' + "'" + club["url"] + "'" + "," + "'" + "_blank" + "'" +');"' + 
+								'value="Learn More" />' + 
+								'<hr>' + 
+							'</div>';
+			pageHTML += clubHTML;
+		}
+	}
+	if(pageHTML === '')
+	{
+		pageHTML = '<h3>No matches found</h3>'
 	}
 	$("#result_list").html(pageHTML);
 }
