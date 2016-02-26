@@ -23,37 +23,27 @@ function submitClick(e)
 
 function validateCredentials(data, name, email, password, confirmPassword)
 {
-	if(name != "" && email != "" && password != "")
+	if(!formContainsEmptyBoxes(name, email, password))
 	{
-		if(email.indexOf("@") != -1)
+		if(emailIsValid(email))
 		{
-			if(emailUnused(data["Users"], email))
+			if(emailIsUnused(data["Users"], email))
 			{
-				if(password === confirmPassword)
+				if(passwordMatchesConfirmPassword(password, confirmPassword))
 				{
-					var user = 
-					{
-						"name": name,
-						"email": email,
-						"password": password
-					}
-					makePostRequest(JSON.stringify(user));
+					makePostRequest(name, email, password);
 					window.location.href = "/login";
 				}
-				else
-				{
-					$("#alert_box").html("<h2>Password And Confirm Password Do Not Match</h2>");
-				}
-			}
-			else
-			{
-				$("#alert_box").html("<h2>Email is already in use</h2>");
 			}
 		}
-		else
-		{
-			$("#alert_box").html("<h2>Email is not valid</h2>");
-		}
+	}
+}
+
+function formContainsEmptyBoxes(name, email, password)
+{
+	if(name != "" && email != "" && password != "")
+	{
+		return false;
 	}
 	else
 	{
@@ -69,24 +59,53 @@ function validateCredentials(data, name, email, password, confirmPassword)
 		{
 			$("#alert_box").html("<h2>Username cannot be empty<h2>");
 		}
+		return true;
 	}
 }
 
-function emailUnused(users, email)
+function emailIsValid(email)
+{
+	if(email.indexOf("@") != -1)
+	{
+		return true;
+	}
+	$("#alert_box").html("<h2>Email is not valid</h2>");
+	return false;
+}
+
+function emailIsUnused(users, email)
 {
 	for(var i = 0; i < users.length; i++)
 	{	
 		var user = users[i];
 		if(user["email"] === email)
 		{
+			$("#alert_box").html("<h2>Email is already in use</h2>");
 			return false;
 		}
-	}
+	}	
 	return true;
 }
 
-function makePostRequest(userData)
+function passwordMatchesConfirmPassword(password, confirmPassword)
 {
+	if(password === confirmPassword)
+	{
+		return true;
+	}
+	$("#alert_box").html("<h2>Password And Confirm Password Do Not Match</h2>");
+	return false;
+}
+
+function makePostRequest(name, email, password)
+{
+	var user = 
+	{
+		"name": name,
+		"email": email,
+		"password": password
+	}
+	var userData = JSON.stringify(user);
 	$.ajax({
 			url : '/users', 
 			type : 'POST', 
