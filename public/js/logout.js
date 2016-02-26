@@ -11,16 +11,16 @@ $(document).ready(function(){
  */
 function initializePage() 
 {
-	$('#submit').click(loginClick);
+	$('#logout').click(logoutClick);
 }
 
-function loginClick(e)
+function logoutClick(e)
 {
 	e.preventDefault();
-	$.get("/users/", validateLogin);
+	$.get("/users/", logoutUser);
 }
 
-function validateLogin(result)
+function logoutUser(result)
 {
 	var users = result["Users"];
 	var email = $('#email').val();
@@ -35,18 +35,13 @@ function validateLogin(result)
 			//TODO: Fix this to use a salted hash for password verification
 			if(user['password'] === password)
 			{
-				document.cookie = 'clubbook_user_email=' + email + ';';
+				document.cookie = 'clubbook_user_email=' + "" + ';';
 				dumpCookies();
 				window.location.href = "/";
-				validLogin = true;
+        break
 			}
 		}		
 	}
-	if(!validLogin)
-	{
-		$("#alert_box").html("<h2>Invalid Credentials</h2>");
-	}
-
 }
 
 function dumpCookies()
