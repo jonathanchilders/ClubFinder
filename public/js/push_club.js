@@ -12,6 +12,7 @@ function initializePage()
 function submitClick(e)
 {
 	e.preventDefault();
+	generatePostRequest();
 }
 
 function generatePostRequest()
@@ -34,9 +35,11 @@ function generatePostRequest()
   	{
   		'name' : name,
   		'description' : description,
-  		'url' : url
+  		'url' : url,
+  		'tags': tags
   	}
   	var jsonclub = JSON.stringify(club);
+  	console.log(jsonclub);
   	$.ajax({
 		url : '/clubs', 
 		type : 'POST', 
@@ -48,5 +51,5 @@ function generatePostRequest()
                 console.log(data);
         	}
 		});
-  	windows.location.href = "/";
+  	window.location.href = "/";
 }
