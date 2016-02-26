@@ -9,6 +9,7 @@
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/introHCI.css" rel="stylesheet"> 
 	<link href="/css/common.css" rel="stylesheet">
+	<link href="/css/login.css" rel="stylesheet">
 </head>
 
 <body>	
@@ -24,28 +25,31 @@
 		<div>
 			<h1>Create Profile</h1>
 		</div>
-		<form id="addUserForm" role="form" method="get" action="/successful_profile"
-			<div class="form-group"> 
-				<label for="name">User Name:</label>
-				<input type="text" class="form-control" id="name" placeholder="User Name" name="name">
-				<br>
-				<label for="email">User Email:</label>
-				<input type="text" class="form-control" id="email" placeholder="User Email" name="email">	
-				<br>
-				<label for="password">Password:</label>
-				<input type="password" class="form-control" id="password" placeholder="Password" name="password">
-				<br>
-				<label for="confirm_password">Confirm Password:</label>
-				<input type="password" class="form-control" id="confirm_password" placeholder="Confirm Password" name="confirm_password">
-			
-				<input type="submit" class="button" value="Submit" style="display: block; margin: 0 auto;width: 150px;height: 50px;padding-bottom: 0px;padding-top: 0px;padding-left: 0px;padding-right: 0px;margin-bottom: 0px;margin-top: 10px;"/>
-			</div>
-	    </form>
+
+		<div>
+			<p id="alert_box"></p>
+		</div>
+
+		<div> 
+			<label>User Name:</label>
+			<input type="text" id="name" class="form-control" placeholder="User Name" name="name">
+			<br>
+			<label>User Email:</label>
+			<input type="text" id="email" class="form-control" placeholder="User Email" name="email">	
+			<br>
+			<label>Password:</label>
+			<input type="password" id="password" class="form-control" placeholder="Password" name="password">
+			<br>
+			<label>Confirm Password:</label>
+			<input type="password" id="confirm_password" class="form-control" placeholder="Confirm Password" name="confirm_password">
+		
+			<input type="submit" class="button" id="submit" value="Submit" style="display: block; margin: 0 auto;width: 150px;height: 50px;padding-bottom: 0px;padding-top: 0px;padding-left: 0px;padding-right: 0px;margin-bottom: 0px;margin-top: 10px;"/>
+		</div>
 
 	</div>
 
-
-	<script src="/js/bootstrap.min.js"></script>
 	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/profile_validation.js"></script>
 </body>
 </html>

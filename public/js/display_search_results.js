@@ -24,15 +24,16 @@ function matchCookieToUser(users)
       	var value = cookiearray[i].split('=')[1];
       	if(name == "clubbook_user_email")
       	{
-      		for(var i = 0; i < userList.length; i++)
+      		for(var j = 0; j < userList.length; j++)
       		{
-      			var user = userList[i];
+      			var user = userList[j];
       			if(user["email"] == value)
       			{
       				$.get("/clubs/", 
       					function(data){
 							setClubs(data, user);
 						});
+      				break;
       			}
       		}
       	} 
@@ -47,26 +48,26 @@ function setClubs(clubList, user)
 function buildPage(clubs, currentUser)
 {
 	var matchList = buildMatchList(clubs, currentUser);
-	matchList.sort(sortBy("matches", false, function(a){return a}));
-	console.log(matchList);
-	/*var pageHTML = '';
-	for(var i = 0; i < clubs.length; i++)
+	matchList.sort(sortBy("matches", true, function(a){return a}));
+	var pageHTML = '';
+	for(var i = 0; i < matchList.length; i++)
 	{
-		var club = clubs[i];
+		var match = matchList[i];
+		var club = match["club"];
 		var clubHTML = '<div>' + 
 							'<h3>' + club["name"] + '</h3>' + 
 							'<p>'+ club["description"] + '</p>' +
 							'<input type=' + '"button"' + 'class=' + '"button"' +
-							'onclick="location.href=' + "'" + club["url"] + "'" + ';"' + 
+							'onclick="window.open(' + "'" + club["url"] + "'" + "," + "'" + "_blank" + "'" +');"' + 
 							'value="Learn More" />' + 
 							'<hr>' + 
 						'</div>';
 		pageHTML += clubHTML;
 	}
-	$("#result_list").html(pageHTML);*/
+	$("#result_list").html(pageHTML);
 }
 
-var sortBy = function(field, reverse, primer)
+function sortBy(field, reverse, primer)
 {
    var key = primer ? 
        function(x) {return primer(x[field])} : 
@@ -86,13 +87,19 @@ function buildMatchList(clubs, user)
 	for(var i = 0; i < clubs.length; i++)
 	{
 		var club = clubs[i];
-		var club_tags = club["tags"];
+		var clubTags = club["tags"];
+		var userTags = user["tags"];
 		var result = 0;
-		for(var j = 0; j < club_tags; j++)
+		for(var j = 0; j < clubTags.length; j++)
 		{
-			if($.inArray(club_tags[j], user["tags"]))
-			{
-				result++;
+			var clubTag = clubTags[j];
+			for(var k = 0; k < userTags.length; k++)
+			{	
+				var userTag = userTags[k];
+				if(userTag["name"] === clubTag["name"])
+				{
+					result++;
+				}
 			}
 		}
 		var matchObj =
