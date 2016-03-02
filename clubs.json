@@ -1,22 +1,6 @@
 {
 	"Clubs": [
 		{
-			"name": "Science Fiction Lovers",
-			"description": "He who controls the spice controls the universe.",
-			"url": "https://en.wikipedia.org/wiki/Dune_(novel)",
-			"tags" : [
-				{
-      				"name": "Science Fiction"
-    			},
-    			{
-      				"name": "Cosplay"
-    			},
-    			{
-    				"name": "Movies"
-    			}
-			]
-		},
-		{
 			"name": "Starcraft 2 Club",
 			"description": "My life for Auir!",
 			"url": "http://us.battle.net/sc2/en/legacy-of-the-void/",
@@ -49,34 +33,15 @@
 			]
 		},
 		{
-			"name": "Star Wars Fans",
-			"description": "May the force be with you!",
-			"url": "http://www.starwars.com/",
-			"tags" : [
-				{
-      				"name": "Science Fiction"
-    			},
-    			{
-      				"name": "Movies"
-    			},
-    			{
-      				"name": "Culture"
-    			},
-    			{
-    				"name": "Cosplay"
-    			}
-			]
-		},
-		{
-			"name": "Chess Players",
-			"description": "Queen to E3",
-			"url": "http://www.expertchessstrategies.com/chess-tips.shtml",
+			"name": "UCSD Chess Club",
+			"description": "The club still remains true to its purpose today: to spread campuswide interest in the game of chess as an enjoyable hobby",
+			"url": "http://jamesucsd.wix.com/chess",
 			"tags" : [
 				{
       				"name": "Social"
     			},
     			{
-      				"name": "Hobbies"
+      				"name": "Hobby"
     			},
     			{
       				"name": "Board Games"
@@ -84,24 +49,15 @@
 			]
 		},
 		{
-			"name": "Gym Bros",
-			"description": "Do you even lift bro?",
-			"url": "http://shop.brosciencelife.com",
+			"name": "Triton Barbell at UCSD",
+			"description": "We welcome anyone to join the team from amateurs to seasoned pros. You must be willing to put in the hard work and time it takes to become stronger, and most importantly be ready to have fun with a unique cast of characters.",
+			"url": "https://www.facebook.com/ucsdlifting/",
 			"tags" : [
-				{
-      				"name": "Alcohol"
-    			},
     			{
       				"name": "Weightlifting"
     			},
     			{
-      				"name": "Social"
-    			},
-    			{
       				"name": "Health"
-    			},
-    			{
-      				"name": "Running"
     			},
     			{
       				"name": "Bro"
@@ -110,6 +66,140 @@
       				"name": "Fitness"
     			}
 			]
-		}
+		},
+    {
+      "name": "Triton Gaming",
+      "description": "Triton Gaming is UC San Diego's one-stop-shop for all things entertainment, dedicated to creating epic entertainment experiences for all games and gamers.",
+      "url": "http://tespa.org/ucsd/",
+      "tags" : [
+        {
+              "name": "Video Games"
+          },
+          {
+              "name": "Social"
+          },
+          {
+              "name": "Hobby"
+          }
+      ]
+    }, 
+    {
+      "name": "SPOT at UCSD",
+      "description": "SPOT for Speech, Physical, AND Occupational Therapy at UCSD, we are excited to incorporate all of the rehabilitation sciences to provide our members with quality speakers, useful workshops, and wholesome fun as a family of interest rehab students",
+      "url": "https://ucsdspot.wordpress.com/",
+      "tags" : [
+        {
+              "name": "Professional"
+          },
+          {
+              "name": "Health"
+          },
+          {
+              "name": "Business"
+          }
+      ]
+    }, 
+    {
+      "name": "Anime Club Cal Animage Beta",
+      "description": "We host anime showings Monday evenings starting at 8pm. We also hang out and organize weekend socials like karaoke, club dinner, and Tea Party (anime marathon + potluck). Our largest event is our on-campus con, Animefest, which is taking place this Winter Quarter",
+      "url": "https://www.facebook.com/groups/CALAnimageBeta/",
+      "tags" : [
+        {
+              "name": "Anime"
+          },
+          {
+              "name": "Cosplay"
+          },
+          {
+              "name": "Hobby"
+          },
+          {
+              "name": "Culture"
+          }
+      ]
+    }, 
+    {
+      "name": "Strides Running Club at UCSD",
+      "description": "Strides is a recreational running club at the University of California, San Diego. Our purpose is to provide a friendly environment to runners of all skill levels--from individuals that are interested in trying out running, to seasoned athletes who seek to improve personal running bests.",
+      "url": "http://mandymnichols.wix.com/strides",
+      "tags" : [
+        {
+              "name": "Running"
+          },
+          {
+              "name": "Fitness"
+          },
+          {
+              "name": "Sports"
+          },
+          {
+              "name": "Outdoors"
+          }
+      ]
+    }, 
+    {
+      "name": "Photography Club at UCSD",
+      "description": "Photo Club is an official UCSD organization, and is a fantastic opportunity to improve your photographic skills and knowledge, providing a venue to challenge those skills, and a forum to share what you have learned with others who have a passion for photography",
+      "url": "https://www.facebook.com/groups/39609628867/",
+      "tags" : [
+        {
+              "name": "Photography"
+          },
+          {
+              "name": "Hobby"
+          },
+          {
+              "name": "Outdoors"
+          },
+          {
+              "name": "Professional"
+          }
+      ]
+    }, 
+    {
+      "name": "Video Game Dev Club @ UCSD",
+      "description": "We’re a member of Triton Gaming, the collective of everything gaming on campus!",
+      "url": "http://gamedev.ucsd.edu/",
+      "tags" : [
+        {
+              "name": "Video Games"
+          },
+          {
+              "name": "Hobby"
+          },
+          {
+              "name": "Coding"
+          },
+          {
+              "name": "Science Fiction"
+          }
+      ]
+    }, 
+    {
+      "name": "Kaibigang Pilipin@",
+      "description": "KP began as a social gathering for Pilipin@s and Pilipin@-Americans to feel comfortable on campus. Since then, we continue to educate the UCSD and San Diego communities about the many aspects of Pilipin@ culture, as well as to preserve and promote positive images of Pilipin@s. ",
+      "url": "https://www.facebook.com/ucsdkp/",
+      "tags" : [
+        {
+              "name": "Culture"
+          },
+          {
+              "name": "Social"
+          }
+      ]
+    }, 
+    {
+      "name": "Asian & Pacific-Islander Student Alliance",
+      "description": "We, the students of University of California at San Diego (UCSD), come together to provide a forum to deal with the problems and concerns of UCSD Asian and Pacific-Islander (API) students, especially those deemed “underrepresented” by the Student Affirmative Action Committee (SAAC); to try and create an environment where issues such as those political, educational, cultural and social can be addressed; to increase awareness about our API history and heritage within the university and the community; to unite as a community resource to represent a common voice and thereby empower ourselves; and to serve as a support network for building bonds and addressing differences between students ",
+      "url": "http://ucsdapsa.weebly.com/",
+      "tags" : [
+        {
+              "name": "Culture"
+          },
+          {
+              "name": "Social"
+          }
+      ]
+    }
 	]
 }
