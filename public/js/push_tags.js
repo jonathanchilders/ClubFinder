@@ -17,7 +17,8 @@ function submitC(e)
 
 function generatePRequest()
 {
-	var tags = txt;
+    var tags = arr[index];
+    index++;
   	var tag = 
   	{
   		'name': tags

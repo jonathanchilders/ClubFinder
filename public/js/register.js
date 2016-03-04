@@ -1,4 +1,6 @@
-var txt;
+var arr = new Array();
+var i = 0;
+var index = 0;
 
 $(function(){ // DOM ready
 
@@ -6,8 +8,10 @@ $(function(){ // DOM ready
 
   $("#tags input").on({
     focusout : function() {
-      txt = this.value.replace(/[^a-z0-9\+\-\.\#]/ig,''); // allowed characters
+      var txt = this.value.replace(/[^a-z0-9\+\-\.\#]/ig,''); // allowed characters
       if(txt) $("<span/>", {text:txt.toLowerCase(), insertBefore:this});
+      arr[i] = this.value;
+      i++;
       this.value = "";
     },
     keyup : function(ev) {
