@@ -32,6 +32,16 @@ function generatePostRequest()
       tags.push(newTag); 
     }
     });
+  var x = 0;
+  while (x < arr.length)
+  {
+    var customTags = 
+    {
+      'name' : arr[x]
+    }
+    x++;
+    tags.push(customTags);
+  }
     var club = 
     {
       'name' : name,
