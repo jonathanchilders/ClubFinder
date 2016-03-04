@@ -10,9 +10,12 @@ $(function(){ // DOM ready
     focusout : function() {
       var txt = this.value.replace(/[^a-z0-9\+\-\.\#]/ig,''); // allowed characters
       if(txt) $("<span/>", {text:txt.toLowerCase(), insertBefore:this});
-      arr[i] = this.value;
-      i++;
-      this.value = "";
+      if (txt != "")
+      {
+        arr[i] = txt;
+        i++;
+      }
+      this.value = null;
     },
     keyup : function(ev) {
       // if: comma|enter (delimit more keyCodes with | pipe)

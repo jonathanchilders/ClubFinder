@@ -7,6 +7,7 @@ $(document).ready(function(){
 function initializeP() 
 {
 	$('#add_tag_button').click(submitC);
+  $('#submit').click(submitC);
 }
 
 function submitC(e)
