@@ -6,5 +6,5 @@ exports.getTags = function(req, res) {
 
 exports.postTags = function(req, res){
 	var data = req.body;
-	tags['Tags'].push(data);
+	tags["Tags"].push(data);
 }

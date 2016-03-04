@@ -48,9 +48,9 @@
 				</div>
 			{{/each}}
 			<div id="tags">
-				<input type="text" class="form-control" name="tag" placeholder="Add a tag" />
+				<input type="text" id="add_tag" value="" placeholder="Add a tag" />
 			</div>
-			<input type="button" class="button" id="addTag" onclick="document.write(",")" value="Add Tag"/>
+			<input type="button" id="add_tag_button" class="button" onclick="document.write(",")" value="Add Tag"/>
 			<br>
 			<br>
 			<input type="submit" class="button" id="submit" value="Register"/>
@@ -64,6 +64,7 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/push_club.js"></script>
+	<script src="/js/push_tags.js"></script>
 <!-- 	<script src="/js/navbar_manager.js"></script> -->
 </body>
 </html>

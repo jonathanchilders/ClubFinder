@@ -38,14 +38,14 @@
 #tags > span:hover{
   opacity:0.7;
 }
-/*#tags > span:after{
+#tags > span:after{
  position:absolute;
  content:"×";
  border:1px solid;
  padding:2px 5px;
  margin-left:3px;
  font-size:11px;
-}*/
+}
 #tags > input{
   background:#eee;
   border:0;
