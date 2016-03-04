@@ -25,7 +25,7 @@ function generatePRequest()
   	{
   		'name': tags
   	}
-  }
+
   	var jsontag = JSON.stringify(tag);
   	console.log(jsontag);
   	$.ajax({
@@ -39,4 +39,5 @@ function generatePRequest()
                 console.log(data);
         	}
 		});
+  }
 }
