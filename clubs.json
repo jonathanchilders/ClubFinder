@@ -1,38 +1,6 @@
 {
 	"Clubs": [
 		{
-			"name": "Starcraft 2 Club",
-			"description": "My life for Auir!",
-			"url": "http://us.battle.net/sc2/en/legacy-of-the-void/",
-			"tags" : [
-				{
-      				"name": "Science Fiction"
-    			},
-    			{
-      				"name": "Video Games"
-    			},
-    			{
-    				"name": "Hobby"
-    			}
-			]
-		},
-		{
-			"name": "Crappy Coders Club",
-			"description": "enum Bool {True, False, FileNotFound};",
-			"url": "http://thedailywtf.com/",
-			"tags" : [
-				{
-      				"name": "Coding"
-    			},
-    			{
-      				"name": "Professional"
-    			},
-    			{
-    				"name": "Business"
-    			}
-			]
-		},
-		{
 			"name": "UCSD Chess Club",
 			"description": "The club still remains true to its purpose today: to spread campuswide interest in the game of chess as an enjoyable hobby",
 			"url": "http://jamesucsd.wix.com/chess",
@@ -198,6 +166,242 @@
           },
           {
               "name": "Social"
+          }
+      ]
+    }, 
+    {
+      "name": "Alternative Breaks",
+      "description": "Alternative Breaks are local, domestic, or international service learning trips that use education of social justice issues combined with quality direct service to have a lasting impact on students and the communities they work in. ",
+      "url": "www.alternativebreaksatucsd.org ",
+      "tags" : [
+        {
+              "name": "Cultural"
+          },
+          {
+              "name": "Philanthropy"
+          },
+          {
+              "name": "Social"
+          }
+      ]
+    }, 
+    {
+      "name": "Cognitive Science Student Association",
+      "description": "Aid Cognitive Science student body through academic, professional, and social means; Engage graduate population and faculty. ",
+      "url": "cssa.ucsd.edu",
+      "tags" : [
+        {
+              "name": "Professional"
+          },
+          {
+              "name": "Academic"
+          },
+          {
+              "name": "Business"
+          }
+      ]
+    }, 
+    {
+      "name": "Circle K. International",
+      "description": "Circle K International is comprised of university students who are responsible citizens and leaders with a lifelong commitment to community service worldwide. Through the three tenets of Service, Leadership, and Fellowship, Circle K inspires people to better our world, following the motto of 'Live to Serve, Love to Serve.' Circle K provides constructive opportunities for students to become involved on their campuses and communities through service work to others in need. ",
+      "url": "ucsdcki.org",
+      "tags" : [
+        {
+              "name": "Culture"
+          },
+          {
+              "name": "Philanthropy"
+          },
+          {
+              "name": "Social"
+          }
+      ]
+    }, 
+    {
+      "name": "Fashion Quarterly Magazine",
+      "description": "Fashion Quarterly is UCSD's premier fashion magazine and we are currently in our eighth year running. Every winter and spring quarter, the FQ staff scouts for and features student designers, photographers, stylists, journalists, bloggers, make-up artists, fashion events and major talents via the pages of Fashion Quarterly Magazine which is distributed exclusively at UCSD. ",
+      "url": "https://issuu.com/fashionquarterly",
+      "tags" : [
+        {
+              "name": "Hobby"
+          },
+          {
+              "name": "Professional"
+          },
+          {
+              "name": "Cosplay"
+          }
+      ]
+    }, 
+    {
+      "name": "Flying Sams",
+      "description": "Flying Sams is a medical service club at the University of California, San Diego in association with the non-profit service organization, The Flying Samaritans Inc. We are dedicated to providing free medical services to the underprivileged people of Mexico through a clinic staffed entirely of volunteer physicians, nurses, medical and pre-medical students. ",
+      "url": "https://www.facebook.com/groups/ucsdflyingsams/",
+      "tags" : [
+        {
+              "name": "Health"
+          },
+          {
+              "name": "Professional"
+          },
+          {
+              "name": "Philanthropy"
+          }
+      ]
+    }, 
+    {
+      "name": "Global Medical Brigades",
+      "description": "Global Medical Brigades (GMB) is a secular, international network of university clubs that travel to developing countries to perform health care in communities without access to medicine otherwise. GMB delivers a holistic model for sustainable health through rigorous needs assessments, sponsoring referrals to those with needs beyond our capacity, keeping accurate electronic patient records, and working to improve the water and overall public health infrastructures of the villages we serve. ",
+      "url": "https://www.facebook.com/groups/11689760222/",
+      "tags" : [
+        {
+              "name": "Health"
+          },
+          {
+              "name": "Philanthropy"
+          },
+          {
+              "name": "Professional"
+          }
+      ]
+    }, 
+    {
+      "name": "Health and Medical Professions Preparation Program (HMP3)",
+      "description": "The UCSD Health and Medical Professions Preparation Program (HMP3) provides undergraduates with enriching experiences that will enhance their preparation for admission into professional school in the medical and other health professions. Through collaborations with the UCSD School of Medicine, faculty, community health care providers and others, HMP3 provides members with stimulating experiences designed to expand the mind and increase qualifications for entry into the health professions.",
+      "url": "https://www.facebook.com/HMP3atUCSD/?fref=ts",
+      "tags" : [
+        {
+              "name": "Health"
+          },
+          {
+              "name": "Professional"
+          },
+          {
+              "name": "Business"
+          }
+      ]
+    }, 
+    {
+      "name": "International Studies Student Association (ISSA) at UCSD",
+      "description": "The International Studies Student Association (also: ISSA) is the official student organization of the International Studies Program (ISP) Department at the University of California, San Diego. The organization gathers like-minded individuals who share diverse interests in international studies and international relations. ISSA intends to provide a platform of rich experiences and opportunities in international studies. ",
+      "url": "https://www.facebook.com/issa.ucsd/?fref=ts",
+      "tags" : [
+        {
+              "name": "Cultural"
+          },
+          {
+              "name": "Social"
+          },
+          {
+              "name": "Academic"
+          }
+      ]
+    }, 
+    {
+      "name": "Movimiento Estudiantil Chicanola de Aztlan (MECHA)",
+      "description": "M.E.Ch.A. is a political voice for UCSD. It takes part in a series of political events through out the year, such as Raza Awareness Week. M.E.Ch.A. also honors many cultural holidays such as El dia de los Muertos and Las Posadas that occur in December; creating an atmosphere for social interaction. M.E.Ch.A. also strives in bridging the gap between High School and College by working directly with the youth of our community. This is accomplished through our annual Raza Youth Empowerment Conference, weekly outreach events, campus tours, overnight programs, and one on one mentoring. In realizing the importance of giving back to the community, we recognize that we are at UCSD to be successful students. We strive to build a community that is strong and united. The year is finalized with our Raza Graduation. Most importantly, throughout the year we build a strong network of people who are currently aware students, activists, and friends. ",
+      "url": "https://www.facebook.com/groups/2202545724/",
+      "tags" : [
+        {
+              "name": "Cultural"
+          },
+          {
+              "name": "Academic"
+          },
+          {
+              "name": "Professional"
+          }
+      ]
+    }, 
+    {
+      "name": "Muir Musical",
+      "description": "The Muir Musical is a UCSD student organization that produces one completely student-run musical theatre production annually. Students from all six UCSD colleges are invited to participate in a full-scale Broadway production that marks the single musical theatre opportunity for UCSD students all year long. ",
+      "url": "https://muirmusical.wordpress.com/ ",
+      "tags" : [
+        {
+              "name": "Music"
+          },
+          {
+              "name": "Social"
+          },
+          {
+              "name": "Hobby"
+          },
+          {
+              "name": "Dance"
+          }
+      ]
+    }, 
+    {
+      "name": "Sun God Archery at UCSD",
+      "description": "The purpose of this organization is to provide the opportunity for UCSD students to compete intercollegiately, and to foster interest and participation in the sport of target archery. ",
+      "url": "sungodarchery.ucsd.edu ",
+      "tags" : [
+        {
+              "name": "Fitness"
+          },
+          {
+              "name": "Hobby"
+          },
+          {
+              "name": "Outdoors"
+          },
+          {
+              "name": "Sports"
+          }
+      ]
+    }, 
+    {
+      "name": "Tritones at UCSD",
+      "description": "To encourage participation in the fine arts, to provide entertainment, to support all musical endeavors, to expand the genre of a cappella in the San Diego region. ",
+      "url": "http://www.ucsdtritones.com/",
+      "tags" : [
+        {
+              "name": "Music"
+          },
+          {
+              "name": "Social"
+          },
+          {
+              "name": "Hobby"
+          },
+          {
+              "name": "Art"
+          }
+      ]
+    }, 
+    {
+      "name": "Surfrider Foundation Club at UCSD",
+      "description": "Surfrider Foundatioin UCSD club is a club that works to keep our local beaches and ocean clean, while also keeping our marine wildlife safe. Members promote a cleaner marine environment that students and faculty alike can enjoy, and inform students about current environmental issues.",
+      "url": "https://www.facebook.com/groups/323624061009112/",
+      "tags" : [
+        {
+              "name": "Environmental"
+          },
+          {
+              "name": "Social"
+          },
+          {
+              "name": "Philanthropy"
+          },
+          {
+              "name": "Outdoors"
+          }
+      ]
+    }, 
+    {
+      "name": "Speech and Debate",
+      "description": "In order for UCSD students to actively compete in speech and debate tournaments in the United States as well as to improve student's communication and argumentative ski",
+      "url": "https://www.facebook.com/ucsdspeechanddebate/?fref=ts",
+      "tags" : [
+        {
+              "name": "Hobby"
+          },
+          {
+              "name": "Academic"
+          },
+          {
+              "name": "Professional"
           }
       ]
     }

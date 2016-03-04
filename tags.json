@@ -64,16 +64,23 @@
 			"name": "Cosplay"
 		},
 		{
-			"name": "Yoga"
-		},
-		{
-			"name": "Bro"
-		},
-		{
 			"name": "Food"
 		},
 		{
 			"name": "Politics"
+		},
+		{
+			"name": "Philanthropy"
+		},
+		{
+			"name": "Academic"
+		},
+		{
+			"name": "Art"
+		},
+		{
+			"name": "Environmental"
 		}
+
 	]
 }
