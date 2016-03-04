@@ -21,11 +21,11 @@ function generatePRequest()
     {
       var tags = arr[index];
       index++;
-    }
   	var tag = 
   	{
   		'name': tags
   	}
+  }
   	var jsontag = JSON.stringify(tag);
   	console.log(jsontag);
   	$.ajax({
