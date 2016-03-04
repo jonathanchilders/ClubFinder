@@ -17,8 +17,11 @@ function submitC(e)
 
 function generatePRequest()
 {
-    var tags = arr[index];
-    index++;
+    if (arr[index] != null)
+    {
+      var tags = arr[index];
+      index++;
+    }
   	var tag = 
   	{
   		'name': tags
